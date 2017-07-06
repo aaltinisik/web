@@ -1,35 +1,54 @@
-/******************************************************************************
-    Copyright (C) 2015 Akretion (http://www.akretion.com)
-    @author Sylvain Calador <sylvain.calador@akretion.com>
+/* Copyright 2015 Sylvain Calador <sylvain.calador@akretion.com>
+   Copyright 2015 Javi Melendez <javi.melendez@algios.com>
+   Copyright 2016 Antonio Espinosa <antonio.espinosa@tecnativa.com>
+   Copyright 2017 Thomas Binsfeld <thomas.binsfeld@acsone.eu>
+ * License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). */
 
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU Affero General Public License as
-    published by the Free Software Foundation, either version 3 of the
-    License, or (at your option) any later version.
+odoo.define('web_environment_ribbon.ribbon', function(require) {
+"use strict";
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU Affero General Public License for more details.
+var $ = require('$');
+var Model = require('web.Model');
+var core = require('web.core');
 
-    You should have received a copy of the GNU Affero General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-******************************************************************************/
+var backend_model = new Model('web.environment.ribbon.backend');
 
-openerp.web_environment_ribbon = function(instance) {
+// Code from: http://jsfiddle.net/WK_of_Angmar/xgA5C/
+function validStrColour(strToTest) {
+    if (strToTest === "") { return false; }
+    if (strToTest === "inherit") { return true; }
+    if (strToTest === "transparent") { return true; }
+    var image = document.createElement("img");
+    image.style.color = "rgb(0, 0, 0)";
+    image.style.color = strToTest;
+    if (image.style.color !== "rgb(0, 0, 0)") { return true; }
+    image.style.color = "rgb(255, 255, 255)";
+    image.style.color = strToTest;
+    return image.style.color !== "rgb(255, 255, 255)";
+}
 
-    var ribbon = $(document).find('.test-ribbon');
+core.bus.on('web_client_ready', null, function () {
+    var ribbon = $('<div class="test-ribbon"/>');
+    $('body').append(ribbon);
     ribbon.hide();
-
-    var model = new instance.web.Model('ir.config_parameter');
-    var key = 'ribbon.name';
-
-    var res = model.call('get_param', [key]).then(
-        function (name) {
-            if (name && name != 'False') {
-                ribbon.html(name);
+    // Get ribbon data from backend
+    backend_model.call('get_environment_ribbon').then(
+        function (ribbon_data) {
+            // Ribbon name
+            if (ribbon_data.name && ribbon_data.name != 'False') {
+                ribbon.html(ribbon_data.name);
                 ribbon.show();
+            }
+            // Ribbon color
+            if (ribbon_data.color && validStrColour(ribbon_data.color)) {
+                ribbon.css('color', ribbon_data.color);
+            }
+            // Ribbon background color
+            if (ribbon_data.background_color && validStrColour(ribbon_data.background_color)) {
+                ribbon.css('background-color', ribbon_data.background_color);
             }
         }
     );
-}
+});
+
+}); // odoo.define

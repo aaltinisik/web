@@ -24,8 +24,10 @@
 ##############################################################################
 {
     'name': 'Read Only ByPass',
-    'version': '8.0.1.0.0',
-    "author": "ACSONE SA/NV, Odoo Community Association (OCA)",
+    'version': '9.0.1.0.1',
+    "author": "ACSONE SA/NV, "
+              "Tecnativa, "
+              "Odoo Community Association (OCA)",
     "maintainer": "ACSONE SA/NV,Odoo Community Association (OCA)",
     "website": "http://www.acsone.eu",
     'category': 'Technical Settings',
@@ -36,6 +38,6 @@
     'data': [
         'views/readonly_bypass.xml',
     ],
-    'installable': False,
+    'installable': True,
     'auto_install': False,
 }
