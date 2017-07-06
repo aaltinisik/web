@@ -1,20 +1,16 @@
-.openerp .oe_application .oe_breadcrumb_item:not(:last-child)
-{
-    max-width: inherit;
+.o_control_panel .breadcrumb {
+    width: 100%;
+    margin-bottom: 5px;
 }
-.openerp .oe_searchview
-{
+
+.o_control_panel .o_cp_searchview {
     width: 100%;
 }
-.openerp .oe_view_manager_current > .oe_view_manager_header .oe_header_row_top td
-{
-    padding-bottom: 0px;
+
+.o_control_panel .o_cp_left {
+    width: 45%;
 }
-.openerp .oe_view_manager_current > .oe_view_manager_header span.oe_breadcrumb_item
-{
-    padding-top: 3px;
-}
-.openerp .oe_view_manager table.oe_view_manager_header h2
-{
-    line-height: 20px;
+
+.o_control_panel .o_cp_right {
+    width: 55%;
 }
