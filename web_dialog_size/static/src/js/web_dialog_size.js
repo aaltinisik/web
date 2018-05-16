@@ -32,13 +32,16 @@ Dialog.include({
                 handle: '.modal-header',
                 helper: false
             });
-        }
+        };
+        return this;
     },
 
     close: function() {
-        var draggable = this.$modal.draggable( "instance" );
-        if (draggable) {
-            this.$modal.draggable("destroy");
+        if (this.$modal) {
+            var draggable = this.$modal.draggable("instance");
+            if (draggable) {
+                this.$modal.draggable("destroy");
+            }
         }
         return this._super.apply(this, arguments);
     },
