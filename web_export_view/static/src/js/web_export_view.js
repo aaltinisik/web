@@ -24,9 +24,12 @@ openerp.web_export_view = function (instance) {
 
     instance.web.Sidebar.include({
         redraw: function () {
-            var self = this;
+            var self = this,
+                view_manager = self.getParent() && self.getParent().ViewManager,
+                view_name = view_manager && view_manager.active_view,
+                active_view = view_name && view_manager.views[view_name];
             this._super.apply(this, arguments);
-            if (self.getParent().ViewManager.active_view == 'list') {
+            if (active_view && active_view.controller instanceof instance.web.ListView) {
                 self.$el.find('.oe_sidebar').append(QWeb.render('AddExportViewMain', {widget: self}));
                 self.$el.find('.oe_sidebar_export_view_xls').on('click', self.on_sidebar_export_view_xls);
             }
@@ -140,12 +143,14 @@ openerp.web_export_view = function (instance) {
                     var export_row = [],
                         record = new instance.web.list.Record(record).toForm();
                     $.each(view.visible_columns, function() {
-                        export_row.push(
-                            this.type != 'integer' && this.type != 'float' ?
-                            jQuery('<div/>').html(this.format(
-                                record.data, {process_modifiers: false}
-                            )).text() : record.data[this.id].value
-                        );
+                        if(this.tag == 'field'){
+                            export_row.push(
+                                this.type != 'integer' && this.type != 'float' ?
+                                jQuery('<div/>').html(this.format(
+                                    record.data, {process_modifiers: false}
+                                )).text() : record.data[this.id].value
+                            );
+                        };
                     })
                     export_rows.push(export_row);
                 });

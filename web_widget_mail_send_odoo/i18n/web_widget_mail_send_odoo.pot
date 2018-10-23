@@ -6,8 +6,6 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-27 20:09+0000\n"
-"PO-Revision-Date: 2016-01-27 20:09+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -17,21 +15,21 @@ msgstr ""
 
 #. module: web_widget_mail_send_odoo
 #. openerp-web
-#: code:addons/web_widget_mail_send_odoo/static/src/js/web_widget_mail_send_odoo.js:33
+#: code:addons/web_widget_mail_send_odoo/static/src/js/web_widget_mail_send_odoo.js:50
 #, python-format
 msgid "Can't send email to invalid e-mail address"
 msgstr ""
 
 #. module: web_widget_mail_send_odoo
 #. openerp-web
-#: code:addons/web_widget_mail_send_odoo/static/src/js/web_widget_mail_send_odoo.js:33
+#: code:addons/web_widget_mail_send_odoo/static/src/js/web_widget_mail_send_odoo.js:50
 #, python-format
 msgid "E-mail Error"
 msgstr ""
 
 #. module: web_widget_mail_send_odoo
 #. openerp-web
-#: code:addons/web_widget_mail_send_odoo/static/src/js/web_widget_mail_send_odoo.js:75
+#: code:addons/web_widget_mail_send_odoo/static/src/js/web_widget_mail_send_odoo.js:93
 #, python-format
 msgid "Please complete partner's information."
 msgstr ""

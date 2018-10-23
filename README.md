@@ -34,7 +34,7 @@ addon | version | summary
 [web_dom_model_classes](web_dom_model_classes/) | 8.0.1.0.0 | Allows small UI changes with simple CSS
 [web_easy_switch_company](web_easy_switch_company/) | 8.0.1.0.0 | Multicompany - Easy Switch Company
 [web_environment_ribbon](web_environment_ribbon/) | 8.0.1.0.0 | Web Environment Ribbon
-[web_export_view](web_export_view/) | 8.0.1.3.0 | Export Current View
+[web_export_view](web_export_view/) | 8.0.1.3.1 | Export Current View
 [web_favicon](web_favicon/) | 8.0.1.0.0 | Allows to set a custom shortcut icon (aka favicon)
 [web_form_sticky_header](web_form_sticky_header/) | 8.0.1.0.0 | Web Fixed Header
 [web_graph_improved](web_graph_improved/) | 8.0.0.1.0 | Improves graph views.
@@ -47,12 +47,15 @@ addon | version | summary
 [web_ir_actions_act_window_none](web_ir_actions_act_window_none/) | 8.0.1.0.0 | Execute nothing
 [web_ir_actions_act_window_page](web_ir_actions_act_window_page/) | 8.0.1.0.0 | Allows a developer to trigger a pager to show the previous or next next record in the form view
 [web_last_viewed_records](web_last_viewed_records/) | 8.0.1.0.0 | Last viewed records
+[web_list_html_widget](web_list_html_widget/) | 8.0.1.0.0 | This module allows to use a widget='html' for fields in list (tree) views
+[web_listview_custom_column](web_listview_custom_column/) | 8.0.1.0.0 | Remove or add columns to list views
 [web_listview_custom_element_number](web_listview_custom_element_number/) | 8.0.1.0.0 | Allow users to set manually a quantity of items to display in a tree view
 [web_listview_show_advanced_search](web_listview_show_advanced_search/) | 8.0.1.0.0 | Web Show Advanced Search by default on list view
 [web_m2x_options](web_m2x_options/) | 8.0.0.2.0 | web_m2x_options
 [web_menu_autohide](web_menu_autohide/) | 8.0.1.0.0 | Hide top and left menu bar
 [web_menu_collapsible](web_menu_collapsible/) | 8.0.1.0.0 | Foldable second level Odoo menu
 [web_menu_navbar_needaction](web_menu_navbar_needaction/) | 8.0.1.0.0 | Show the sum of submenus' needaction counters in main menu
+[web_no_crawler](web_no_crawler/) | 8.0.1.0.0 | Disallow indexing completely via robots.txt
 [web_offline_warning](web_offline_warning/) | 8.0.1.0.0 | User-friendly Offline Warning
 [web_onchange_action](web_onchange_action/) | 8.0.1.0.0 | Run actions from onchange handlers
 [web_one2many_list_action](web_one2many_list_action/) | 8.0.1.0.0 | Enable tree_but_open action for One2ManyListView rows.
@@ -83,6 +86,7 @@ addon | version | summary
 [web_widget_pattern](web_widget_pattern/) | 8.0.1.0.0 | Enforce a pattern on an input field
 [web_widget_radio_tree](web_widget_radio_tree/) | 8.0.1.0.0 | Add radio buttons for records in tree.
 [web_widget_text_markdown](web_widget_text_markdown/) | 8.0.1.0.0 | web_widget_text_markdown
+[web_widget_url_listview](web_widget_url_listview/) | 8.0.1.0.0 | Web Widget ListView Url
 [web_widget_x2many_2d_matrix](web_widget_x2many_2d_matrix/) | 8.0.1.1.0 | Show list fields as a matrix
 [web_x2m_defaults_from_previous](web_x2m_defaults_from_previous/) | 8.0.1.0.0 | Use previous input as default for next line
 [web_x2m_filter](web_x2m_filter/) | 8.0.1.0.0 | Allows to define filters in x2many list fields
