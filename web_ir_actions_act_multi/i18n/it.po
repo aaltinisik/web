@@ -6,14 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-11 19:18+0000\n"
-"PO-Revision-Date: 2025-02-11 19:18+0000\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"PO-Revision-Date: 2025-03-12 09:06+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.2\n"
 
 #. module: web_ir_actions_act_multi
 #: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_actions_act_multi__help
@@ -51,31 +52,6 @@ msgid "Binding View Types"
 msgstr "Tipi vista collegamento"
 
 #. module: web_ir_actions_act_multi
-#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_actions_act_multi__changeset_change_ids
-msgid "Changeset Changes"
-msgstr ""
-
-#. module: web_ir_actions_act_multi
-#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_actions_act_multi__changeset_ids
-msgid "Changesets"
-msgstr ""
-
-#. module: web_ir_actions_act_multi
-#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_actions_act_multi__count_changesets
-msgid "Count Changesets"
-msgstr ""
-
-#. module: web_ir_actions_act_multi
-#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_actions_act_multi__count_pending_changeset_changes
-msgid "Count Pending Changeset Changes"
-msgstr ""
-
-#. module: web_ir_actions_act_multi
-#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_actions_act_multi__count_pending_changesets
-msgid "Count Pending Changesets"
-msgstr ""
-
-#. module: web_ir_actions_act_multi
 #: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_actions_act_multi__create_uid
 msgid "Created by"
 msgstr "Creato da"
@@ -96,9 +72,14 @@ msgid "External ID"
 msgstr "ID esterno"
 
 #. module: web_ir_actions_act_multi
+#: model:ir.model,name:web_ir_actions_act_multi.model_ir_model_fields
+msgid "Fields"
+msgstr "Campi"
+
+#. module: web_ir_actions_act_multi
 #: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_actions_act_multi__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: web_ir_actions_act_multi
 #: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_actions_act_multi____last_update
@@ -116,10 +97,20 @@ msgid "Last Updated on"
 msgstr "Ultimo aggiornamento il"
 
 #. module: web_ir_actions_act_multi
+#: model:ir.model,name:web_ir_actions_act_multi.model_ir_model_data
+msgid "Model Data"
+msgstr "Dati modello"
+
+#. module: web_ir_actions_act_multi
+#: model:ir.model,name:web_ir_actions_act_multi.model_ir_model
+msgid "Models"
+msgstr "Modelli"
+
+#. module: web_ir_actions_act_multi
 #: model:ir.model.fields,help:web_ir_actions_act_multi.field_ir_actions_act_multi__help
 msgid ""
-"Optional help text for the users with a description of the target view, such"
-" as its usage and purpose."
+"Optional help text for the users with a description of the target view, such "
+"as its usage and purpose."
 msgstr ""
 "Testo di aiuto opzionale per l'utente con una descrizione della vista "
 "obiettivo, come il suo utilizzo e obiettivo."
@@ -130,30 +121,5 @@ msgid ""
 "Setting a value makes this action available in the sidebar for the given "
 "model."
 msgstr ""
-"Impostare un valore rende questa azione disponibile nella barra laterale per"
-" il dato modello."
-
-#. module: web_ir_actions_act_multi
-#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_actions_act_multi__smart_search
-msgid "Smart Search"
-msgstr ""
-
-#. module: web_ir_actions_act_multi
-#: model:ir.model.fields,help:web_ir_actions_act_multi.field_ir_actions_act_multi__count_pending_changeset_changes
-msgid "The number of pending changes of this record"
-msgstr ""
-
-#. module: web_ir_actions_act_multi
-#: model:ir.model.fields,help:web_ir_actions_act_multi.field_ir_actions_act_multi__count_pending_changesets
-msgid "The number of pending changesets of this record"
-msgstr ""
-
-#. module: web_ir_actions_act_multi
-#: model:ir.model.fields,help:web_ir_actions_act_multi.field_ir_actions_act_multi__count_changesets
-msgid "The overall number of changesets of this record"
-msgstr ""
-
-#. module: web_ir_actions_act_multi
-#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_actions_act_multi__user_can_see_changeset
-msgid "User Can See Changeset"
-msgstr ""
+"Impostare un valore rende questa azione disponibile nella barra laterale per "
+"il dato modello."

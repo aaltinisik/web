@@ -54,6 +54,7 @@ setuptools.setup(
         'odoo-addon-web_timeline>=16.0dev,<16.1dev',
         'odoo-addon-web_touchscreen>=16.0dev,<16.1dev',
         'odoo-addon-web_tree_duplicate>=16.0dev,<16.1dev',
+        'odoo-addon-web_tree_dynamic_colored_field>=16.0dev,<16.1dev',
         'odoo-addon-web_tree_many2one_clickable>=16.0dev,<16.1dev',
         'odoo-addon-web_widget_bokeh_chart>=16.0dev,<16.1dev',
         'odoo-addon-web_widget_char_size>=16.0dev,<16.1dev',
